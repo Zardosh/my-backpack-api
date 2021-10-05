@@ -17,7 +17,6 @@ def get_users():
     return users.get_users()
 
 @app.route('/users', methods=['POST'])
-@helpers.token_required
 def post_user():
     return users.post_user()
 
