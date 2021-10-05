@@ -8,28 +8,39 @@ An API for the My Backpack application made with Flask
 
 # How to run
 
-1. Clone the repository
+1. Create a database named "mybackpack" in the MySQL instance
+
+2. Clone the repository
 
 `git clone https://github.com/Zardosh/my-backpack-api.git`
 
-2. Access the repository
+3. Access the repository
 
 `cd my-backpack-api`
 
-3. Create a venv
+4. Create a venv
 
 `python -m venv venv`
 
-4. Activate the venv
+5. Activate the venv
 
 `venv\scripts\activate`
 
-5. Install the required dependencies
+6. Install the required dependencies
 
 `pip install -r requirements.txt`
 
-6. Configure the `config_example.py` file accordingly and rename it to `config.py`
+7. Configure the `config_example.py` file accordingly and rename it to `config.py`
 
-7. Run the API
+8. Create the tables in the database (run each line individually in the console)
+
+```
+python
+from app import db
+db.create_all()
+exit()
+```
+
+9. Run the API
 
 `python run.py`
