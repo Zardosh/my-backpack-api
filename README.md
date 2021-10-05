@@ -32,7 +32,7 @@ An API for the My Backpack application made with Flask
 
 7. Configure the `config_example.py` file accordingly and rename it to `config.py`
 
-8. Create the tables in the database (type in the console)
+8. Create the tables in the database (run each line individually in the console)
 
 ```
 python
