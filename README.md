@@ -35,8 +35,11 @@ An API for the My Backpack application made with Flask
 8. Create the tables in the database
 
 `python`
+
 `from app import db`
+
 `db.create_all()`
+
 `exit()`
 
 9. Run the API
